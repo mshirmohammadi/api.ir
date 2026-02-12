@@ -21,7 +21,7 @@ print_r($result);
 
 ## ⚡ متدها
 
-### 1️⃣ checkNationalCode
+### 1️⃣ استعلام کد ملی (checkNationalCode)
 **توضیح:** احراز هویت شاهکار (Full)
 **HTTP Method:** POST
 
