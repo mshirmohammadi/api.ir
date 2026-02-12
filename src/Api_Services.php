@@ -11,7 +11,7 @@ class Api_Services
         $this->token = $token;
     }
 
-    public function checkNationalCode($nationalCode, $mobile, $isCompany = false)
+    public function Shahkar1($nationalCode, $mobile, $isCompany = false)
     {
         $data = [
             "nationalCode" => $nationalCode,
