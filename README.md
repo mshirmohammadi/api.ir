@@ -112,7 +112,7 @@ print_r($result);
   "success": true,
   "data": { "matched": true }
 }
-
+```
 # 5️⃣ matchNationalCodeWithCard
 
 **توضیح:** تطبیق کد ملی با کارت بانکی
@@ -136,8 +136,7 @@ print_r($result);
   "code": 1,
   "data": { "matched": true, "bank": "ملت" }
 }
-
----
+```
 
 # 6️⃣ matchNationalCodeWithIban
 
@@ -162,8 +161,7 @@ print_r($result);
   "code": 1,
   "data": { "matched": true, "bank": "ملت" }
 }
-
----
+```
 
 # 7️⃣ matchNationalCodeWithIbanPro
 
@@ -187,8 +185,7 @@ print_r($result);
   "code": 1,
   "data": { "matched": true, "bank": "ملت" }
 }
-
----
+```
 
 # 8️⃣ makeCall
 
@@ -212,8 +209,7 @@ print_r($result);
   "code": 1,
   "data": { "callStatus": "initiated" }
 }
-
----
+```
 
 # 9️⃣ sendCallOTP
 
@@ -237,8 +233,7 @@ print_r($result);
   "code": 1,
   "data": { "otpSent": true }
 }
-
----
+```
 
 # 🔟 sendCallOTPAlt
 
@@ -262,3 +257,4 @@ print_r($result);
   "code": 1,
   "data": { "otpSent": true }
 }
+```
