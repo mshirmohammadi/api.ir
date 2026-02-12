@@ -1,0 +1,24 @@
+{
+    "name": "mshirmohammadi/api.ir",
+    "description": "PHP SDK for api.ir services",
+    "type": "library",
+    "license": "MIT",
+    "keywords": ["api", "iran", "shahkar", "estelam", "api.ir", "khalafi" , "sayyad" , "check"],
+    "authors": [
+        {
+            "name": "Morteza Shirmohammadi",
+            "email": "m.shirmohammadi61@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Shirmohammadi\\Api_Services\\": "src/"
+        }
+    },
+    "require": {
+        "php": ">=5.6",
+        "ext-curl": "*"
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
