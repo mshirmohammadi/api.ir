@@ -112,3 +112,153 @@ print_r($result);
   "success": true,
   "data": { "matched": true }
 }
+
+# 5️⃣ matchNationalCodeWithCard
+
+**توضیح:** تطبیق کد ملی با کارت بانکی
+**HTTP Method:** POST
+
+**پارامترها:**
+- nationalCode (string) – کد ملی
+- birthDate (string) – تاریخ تولد به فرمت YYYY/MM/DD
+- cardNumber (string) – شماره کارت بانکی
+
+**نمونه استفاده:**
+```php
+$result = $shahkar->matchNationalCodeWithCard("0010007700", "1370/01/01", "6037997000000000");
+print_r($result);
+```
+
+**نمونه خروجی:**
+```json
+{
+  "success": true,
+  "code": 1,
+  "data": { "matched": true, "bank": "ملت" }
+}
+
+---
+
+# 6️⃣ matchNationalCodeWithIban
+
+**توضیح:** تطبیق کد ملی با شماره شبا
+**HTTP Method:** POST
+
+**پارامترها:**
+- nationalCode (string) – کد ملی
+- birthDate (string) – تاریخ تولد
+- iban (string) – شماره شبا 26 رقمی
+
+**نمونه استفاده:**
+```php
+$result = $shahkar->matchNationalCodeWithIban("0010007700", "1370/01/01", "IR123456789012345678901234");
+print_r($result);
+```
+
+**نمونه خروجی:**
+```json
+{
+  "success": true,
+  "code": 1,
+  "data": { "matched": true, "bank": "ملت" }
+}
+
+---
+
+# 7️⃣ matchNationalCodeWithIbanPro
+
+**توضیح:** تطبیق کد ملی با شماره شبا پرو (سیاح)
+**HTTP Method:** POST
+
+**پارامترها:**
+- nationalCode (string) – کد ملی
+- iban (string) – شماره شبا 26 رقمی
+
+**نمونه استفاده:**
+```php
+$result = $shahkar->matchNationalCodeWithIbanPro("0010007700", "IR123456789012345678901234");
+print_r($result);
+```
+
+**نمونه خروجی:**
+```json
+{
+  "success": true,
+  "code": 1,
+  "data": { "matched": true, "bank": "ملت" }
+}
+
+---
+
+# 8️⃣ makeCall
+
+**توضیح:** وب‌سرویس تماس تلفنی
+**HTTP Method:** POST
+
+**پارامترها:**
+- numbers (array) – لیست شماره موبایل‌ها یا تلفن‌های ثابت
+- voiceID (string) – شناسه فایل صوتی
+
+**نمونه استفاده:**
+```php
+$result = $shahkar->makeCall(["09121112222"], "voice123");
+print_r($result);
+```
+
+**نمونه خروجی:**
+```json
+{
+  "success": true,
+  "code": 1,
+  "data": { "callStatus": "initiated" }
+}
+
+---
+
+# 9️⃣ sendCallOTP
+
+**توضیح:** وب‌سرویس OTP تلفنی
+**HTTP Method:** POST
+
+**پارامترها:**
+- code (string) – کد یکبار مصرف
+- number (string) – شماره موبایل یا تلفن ثابت
+
+**نمونه استفاده:**
+```php
+$result = $shahkar->sendCallOTP("123456", "09121112222");
+print_r($result);
+```
+
+**نمونه خروجی:**
+```json
+{
+  "success": true,
+  "code": 1,
+  "data": { "otpSent": true }
+}
+
+---
+
+# 🔟 sendCallOTPAlt
+
+**توضیح:** وب‌سرویس OTP تلفنی alt
+**HTTP Method:** POST
+
+**پارامترها:**
+- code (string) – کد یکبار مصرف
+- number (string) – شماره موبایل یا تلفن ثابت
+
+**نمونه استفاده:**
+```php
+$result = $shahkar->sendCallOTPAlt("123456", "09121112222");
+print_r($result);
+```
+
+**نمونه خروجی:**
+```json
+{
+  "success": true,
+  "code": 1,
+  "data": { "otpSent": true }
+}
