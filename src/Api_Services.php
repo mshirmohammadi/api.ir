@@ -25,7 +25,7 @@ class Api_Services
         // var_dump($result);
     }
 
-    public function checkNationalCodeLite($nationalCode, $mobile)
+    public function Shahkar2($nationalCode, $mobile)
     {
         $data = [
             "nationalCode" => $nationalCode, // کد ملی
