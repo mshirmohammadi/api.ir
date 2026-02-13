@@ -11,7 +11,7 @@ class Api_Services
         $this->token = $token;
     }
 
-    public function Shahkar1($nationalCode, $mobile, $isCompany = false)
+    public function Shahkar($nationalCode, $mobile, $isCompany = false)
     {
         $data = [
             "nationalCode" => $nationalCode,
@@ -25,7 +25,7 @@ class Api_Services
         // var_dump($result);
     }
 
-    public function Shahkar2($nationalCode, $mobile)
+    public function ShahkarLite($nationalCode, $mobile)
     {
         $data = [
             "nationalCode" => $nationalCode, // کد ملی
@@ -34,7 +34,7 @@ class Api_Services
         return $this->sendRequest("https://s.api.ir/api/sw1/ShahkarLite", $data);
     }
 
-    public function matchNationalCodeWithCard($nationalCode, $birthDate, $cardNumber)
+    public function CardMatch($nationalCode, $birthDate, $cardNumber)
     {
         $data = [
             "nationalCode" => $nationalCode, // کد ملی
@@ -44,7 +44,7 @@ class Api_Services
         return $this->sendRequest("https://s.api.ir/api/sw1/CardMatch", $data);
     }
 
-    public function matchNationalCodeWithIban($nationalCode, $birthDate, $iban)
+    public function IbanMatch($nationalCode, $birthDate, $iban)
     {
         $data = [
             "nationalCode" => $nationalCode, // کد ملی
@@ -54,7 +54,7 @@ class Api_Services
         return $this->sendRequest("https://s.api.ir/api/sw1/IbanMatch", $data);
     }
 
-    public function matchNationalCodeWithIbanPro($nationalCode, $iban)
+    public function IbanMatchPro($nationalCode, $iban)
     {
         $data = [
             "nationalCode" => $nationalCode, // کد ملی
@@ -72,7 +72,7 @@ class Api_Services
         return $this->sendRequest("https://s.api.ir/api/sw1/Call", $data);
     }
 
-    public function sendCallOTP($code, $number)
+    public function CallOTP($code, $number)
     {
         $data = [
             "code" => $code,     // کد یکبار مصرف یا OTP
@@ -81,7 +81,7 @@ class Api_Services
         return $this->sendRequest("https://s.api.ir/api/sw1/CallOTP", $data);
     }
 
-    public function sendCallOTPAlt($code, $number)
+    public function CallOTPalt($code, $number)
     {
         $data = [
             "code" => $code,     // کد یکبار مصرف یا OTP
@@ -90,7 +90,7 @@ class Api_Services
         return $this->sendRequest("https://s.api.ir/api/sw1/CallOTPalt", $data);
     }
 
-    public function sendSmsOTP($code, $mobile, $template = 1)
+    public function SmsOTP($code, $mobile, $template = 1)
     {
         $data = [
             "code" => $code,       // کد یا OTP
@@ -100,7 +100,7 @@ class Api_Services
         return $this->sendRequest("https://s.api.ir/api/sw1/SmsOTP", $data);
     }
 
-    public function sendServiceSms($message, array $mobiles)
+    public function SendSms($message, array $mobiles)
     {
         $data = [
             "message" => $message,   // متن پیامک
@@ -109,7 +109,7 @@ class Api_Services
         return $this->sendRequest("https://s.api.ir/api/sw1/SendSms", $data);
     }
 
-    public function videoBiometricVerification($nationalCode, $birthDate, $serialNumber, $videoBase64, $matchingThreshold = 90)
+    public function VideoMatch($nationalCode, $birthDate, $serialNumber, $videoBase64, $matchingThreshold = 90)
     {
         $data = [
             "nationalCode" => $nationalCode,           // کد ملی
@@ -121,7 +121,7 @@ class Api_Services
         return $this->sendRequest("https://s.api.ir/api/sw1/VideoMatch", $data);
     }
 
-    public function videoBiometricLive($nationalCode, $birthDate, $serialNumber, $videoBase64, $matchingThreshold = 90, $livenessThreshold = 80)
+    public function VideoLive($nationalCode, $birthDate, $serialNumber, $videoBase64, $matchingThreshold = 90, $livenessThreshold = 80)
     {
         $data = [
             "nationalCode" => $nationalCode,           // کد ملی
@@ -134,7 +134,7 @@ class Api_Services
         return $this->sendRequest("https://s.api.ir/api/sw1/VideoLive", $data);
     }
 
-    public function videoBiometricFull($nationalCode, $birthDate, $serialNumber, $videoBase64, $speechText, $matchingThreshold = 90, $livenessThreshold = 80, $speechThreshold = 50)
+    public function VideoVerify($nationalCode, $birthDate, $serialNumber, $videoBase64, $speechText, $matchingThreshold = 90, $livenessThreshold = 80, $speechThreshold = 50)
     {
         $data = [
             "nationalCode" => $nationalCode,           // کد ملی
@@ -149,7 +149,7 @@ class Api_Services
         return $this->sendRequest("https://s.api.ir/api/sw1/VideoVerify", $data);
     }
 
-    public function imageBiometricVerification($nationalCode, $birthDate, $serialNumber, $imageBase64, $matchingThreshold = 75)
+    public function FaceMatch($nationalCode, $birthDate, $serialNumber, $imageBase64, $matchingThreshold = 75)
     {
         $data = [
             "nationalCode" => $nationalCode,           // کد ملی
@@ -161,7 +161,7 @@ class Api_Services
         return $this->sendRequest("https://s.api.ir/api/sw1/FaceMatch", $data);
     }
 
-    public function imageBiometricLite($nationalCode, $birthDate, $serialNumber, $imageBase64, $matchingThreshold = 75)
+    public function FaceMatchLite($nationalCode, $birthDate, $serialNumber, $imageBase64, $matchingThreshold = 75)
     {
         $data = [
             "nationalCode" => $nationalCode,           // کد ملی
@@ -173,7 +173,7 @@ class Api_Services
         return $this->sendRequest("https://s.api.ir/api/sw1/FaceMatchLite", $data);
     }
 
-    public function checkEnamad($domain)
+    public function Enamad($domain)
     {
         $data = [
             "domain" => $domain // نام دامنه سایت
@@ -181,13 +181,13 @@ class Api_Services
         return $this->sendRequest("https://s.api.ir/api/sw1/Enamad", $data);
     }
 
-    public function getDynamicWallpaper()
+    public function Wallpaper()
     {
         $data = []; // هیچ پارامتری نیاز ندارد
         return $this->sendRequest("https://s.api.ir/api/sw1/Wallpaper", $data);
     }
 
-    public function getIbanByAccount($accountNumber, $bankCode)
+    public function BankAccountInfo($accountNumber, $bankCode)
     {
         // نگاشت کد بانک به نام بانک
         $bankNames = [
@@ -236,7 +236,7 @@ class Api_Services
         return $response;
     }
 
-    public function getBankCardInfo($cardNumber)
+    public function BankCardInfo($cardNumber)
     {
         $data = [
             "cardNumber" => $cardNumber // شماره کارت بانکی
@@ -245,7 +245,7 @@ class Api_Services
         return $this->sendRequest("https://s.api.ir/api/sw1/BankCardInfo", $data);
     }
 
-    public function cardToIban($cardNumber)
+    public function CardToIban($cardNumber)
     {
         $data = [
             "cardNumber" => $cardNumber // شماره کارت بانکی
@@ -254,7 +254,7 @@ class Api_Services
         return $this->sendRequest("https://s.api.ir/api/sw1/CardToIban", $data);
     }
 
-    public function getIbanInfo($iban)
+    public function IbanInfo($iban)
     {
         $data = [
             "iban" => $iban // شماره شبا 26 رقمی
@@ -263,7 +263,7 @@ class Api_Services
         return $this->sendRequest("https://s.api.ir/api/sw1/IbanInfo", $data);
     }
 
-    public function getCompanyInfo($nationalID)
+    public function CompanyInfo($nationalID)
     {
         $data = [
             "nationalID" => $nationalID // شناسه ملی شرکت یا موسسه
@@ -272,7 +272,7 @@ class Api_Services
         return $this->sendRequest("https://s.api.ir/api/sw1/CompanyInfo", $data);
     }
 
-    public function getCompanyMembers($nationalID)
+    public function CompanyMembers($nationalID)
     {
         $data = [
             "nationalID" => $nationalID // شناسه ملی شرکت
@@ -281,7 +281,7 @@ class Api_Services
         return $this->sendRequest("https://s.api.ir/api/sw1/CompanyMembers", $data);
     }
 
-    public function getCompanyNewspapers($nationalID)
+    public function CompanyNewspapers($nationalID)
     {
         $data = [
             "nationalID" => $nationalID // شناسه ملی شرکت
@@ -290,7 +290,7 @@ class Api_Services
         return $this->sendRequest("https://s.api.ir/api/sw1/CompanyNewspapers", $data);
     }
 
-    public function getCompanySignatories($nationalID)
+    public function CompanySignatories($nationalID)
     {
         $data = [
             "nationalID" => $nationalID // شناسه ملی شرکت
@@ -299,7 +299,7 @@ class Api_Services
         return $this->sendRequest("https://s.api.ir/api/sw1/CompanySignatories", $data);
     }
 
-    public function getPostalCodeInfo(string $postalCode)
+    public function PostalCodeInfo(string $postalCode)
     {
         $data = [
             "postalCode" => $postalCode // کد پستی
@@ -308,7 +308,7 @@ class Api_Services
         return $this->sendRequest("https://s.api.ir/api/sw1/PostalCodeInfo", $data);
     }
 
-    public function trackPostalPackage(string $trackingCode)
+    public function PostalTracking(string $trackingCode)
     {
         $data = [
             "trackingCode" => $trackingCode // کد رهگیری مرسوله پستی
@@ -317,7 +317,7 @@ class Api_Services
         return $this->sendRequest("https://s.api.ir/api/sw1/PostalTracking", $data);
     }
 
-    public function getLocationByPostalCode($postalCode)
+    public function PostalCodeLocation($postalCode)
     {
         $data = [
             "postalCode" => $postalCode // کد پستی
@@ -326,7 +326,7 @@ class Api_Services
         return $this->sendRequest("https://s.api.ir/api/sw1/PostalCodeLocation", $data);
     }
 
-    public function checkSana($nationalCode, $isCompany = false)
+    public function Sana($nationalCode, $isCompany = false)
     {
         $data = [
             "nationalCode" => $nationalCode, // کد ملی یا شناسه ملی
@@ -336,7 +336,7 @@ class Api_Services
         return $this->sendRequest("https://s.api.ir/api/sw1/Sana", $data);
     }
 
-    public function getUnpaidCheques($nationalCode)
+    public function UnpaidCheque($nationalCode)
     {
         $data = [
             "nationalCode" => $nationalCode // کد ملی فرد
@@ -345,7 +345,7 @@ class Api_Services
         return $this->sendRequest("https://s.api.ir/api/sw1/UnpaidCheque", $data);
     }
 
-    public function getChequeColor($nationalCode, $isCompany = false)
+    public function ChequeColor($nationalCode, $isCompany = false)
     {
         $data = [
             "nationalCode" => $nationalCode, // کد ملی یا شناسه ملی شرکت
@@ -355,7 +355,7 @@ class Api_Services
         return $this->sendRequest("https://s.api.ir/api/sw1/ChequeColor", $data);
     }
 
-    public function getChequeInfo($chequeID)
+    public function ChequeInfo($chequeID)
     {
         $data = [
             "chequeID" => $chequeID // شناسه چک صیادی
@@ -364,7 +364,7 @@ class Api_Services
         return $this->sendRequest("https://s.api.ir/api/sw1/ChequeInfo", $data);
     }
 
-    public function getActiveLoans($nationalCode)
+    public function ActiveLoans($nationalCode)
     {
         $data = [
             "nationalCode" => $nationalCode // کد ملی یا شناسه ملی
@@ -373,7 +373,7 @@ class Api_Services
         return $this->sendRequest("https://s.api.ir/api/sw1/ActiveLoans", $data);
     }
 
-    public function getPassportStatus($nationalCode, $mobile)
+    public function PassportStatus($nationalCode, $mobile)
     {
         $data = [
             "nationalCode" => $nationalCode, // کد ملی فرد
@@ -383,7 +383,7 @@ class Api_Services
         return $this->sendRequest("https://s.api.ir/api/sw1/PassportStatus", $data);
     }
 
-    public function getDrivingLicenseScore($nationalCode, $mobile, $licenseNumber)
+    public function DrivingScore($nationalCode, $mobile, $licenseNumber)
     {
         $data = [
             "nationalCode" => $nationalCode,   // کد ملی فرد
@@ -394,7 +394,7 @@ class Api_Services
         return $this->sendRequest("https://s.api.ir/api/sw1/DrivingScore", $data);
     }
 
-    public function getDrivingLicense($nationalCode, $mobile)
+    public function DrivingLisense($nationalCode, $mobile)
     {
         $data = [
             "nationalCode" => $nationalCode,  // کد ملی یا شناسه ملی فرد
@@ -404,7 +404,7 @@ class Api_Services
         return $this->sendRequest("https://s.api.ir/api/sw1/DrivingLisense", $data);
     }
 
-    public function getMilitaryStatus($nationalCode)
+    public function MilitaryStatus($nationalCode)
     {
         $data = [
             "nationalCode" => $nationalCode  // کد ملی فرد
@@ -413,7 +413,7 @@ class Api_Services
         return $this->sendRequest("https://s.api.ir/api/sw1/MilitaryStatus", $data);
     }
 
-    public function getActivePlates($nationalCode, $mobile)
+    public function ActivePlates($nationalCode, $mobile)
     {
         $data = [
             "nationalCode" => $nationalCode,  // کد ملی یا شناسه ملی
@@ -423,8 +423,9 @@ class Api_Services
         return $this->sendRequest("https://s.api.ir/api/sw1/ActivePlates", $data);
     }
 
-    public function getPlateHistory($nationalCode, $plateNumber)
+    public function PlateHistory($nationalCode, $part1, $letter, $part2, $part3)
     {
+        $plateNumber = "ایران {$part1} - {$part2} {$letter} {$part3}";
         $data = [
             "nationalCode" => $nationalCode,  // کد ملی مالک پلاک
             "plateNumber" => $plateNumber     // شماره پلاک به فرمت "ایران 11 – 1111 ب 11"
@@ -433,9 +434,9 @@ class Api_Services
         return $this->sendRequest("https://s.api.ir/api/sw1/PlateHistory", $data);
     }
 
-    public function getVehicleInfoByParts($nationalCode, $part1, $letter, $part2, $part3)
+    public function VehicleInfo($nationalCode, $part1, $letter, $part2, $part3)
     {
-        $plateNumber = "ایران {$part1} – {$part2} {$letter} {$part3}";
+        $plateNumber = "ایران {$part1} - {$part2} {$letter} {$part3}";
 
         $data = [
             "nationalCode" => $nationalCode, // کد ملی مالک پلاک
@@ -446,10 +447,10 @@ class Api_Services
     }
 
 
-    public function getVehicleViolationByParts($nationalCode, $mobile, $part1, $letter, $part2, $part3)
+    public function VehicleViolation($nationalCode, $mobile, $part1, $letter, $part2, $part3)
     {
         // ساخت پلاک به فرمت استاندارد
-        $plateNumber = "ایران {$part1} – {$part2} {$letter} {$part3}";
+        $plateNumber = "ایران {$part1} - {$part2} {$letter} {$part3}";
 
         $data = [
             "nationalCode" => $nationalCode,  // کد ملی مالک خودرو
@@ -460,7 +461,7 @@ class Api_Services
         return $this->sendRequest("https://s.api.ir/api/sw1/VehicleViolation", $data);
     }
 
-    public function getNationalityStatus($code, $codeType = 2)
+    public function NationalityStatus($code, $codeType = 2)
     {
         $data = [
             "code" => $code,         // کد شناسایی تبعه / فیدا / شناسه فراگیر / کد یکتا
@@ -470,7 +471,7 @@ class Api_Services
         return $this->sendRequest("https://s.api.ir/api/sw1/NationalityStatus", $data);
     }
 
-    public function getWaterBill($billID)
+    public function WatterBill($billID)
     {
         $data = [
             "billID" => $billID  // شناسه قبض آب
@@ -479,7 +480,7 @@ class Api_Services
         return $this->sendRequest("https://s.api.ir/api/sw1/WatterBill", $data);
     }
 
-    public function getWaterBillInfo($billID)
+    public function WatterBillInfo($billID)
     {
         $data = [
             "billID" => $billID  // شناسه قبض آب
@@ -488,7 +489,7 @@ class Api_Services
         return $this->sendRequest("https://s.api.ir/api/sw1/WatterBillInfo", $data);
     }
 
-    public function getGasBill($billID)
+    public function GasBill($billID)
     {
         $data = [
             "billID" => $billID  // شناسه قبض گاز
@@ -497,7 +498,7 @@ class Api_Services
         return $this->sendRequest("https://s.api.ir/api/sw1/GasBill", $data);
     }
 
-    public function getGasBillInfo($billID)
+    public function GasBillInfo($billID)
     {
         $data = [
             "billID" => $billID  // شناسه قبض گاز
@@ -506,7 +507,7 @@ class Api_Services
         return $this->sendRequest("https://s.api.ir/api/sw1/GasBillInfo", $data);
     }
 
-    public function getPowerBill($billID)
+    public function PowerBill($billID)
     {
         $data = [
             "billID" => $billID  // شناسه قبض برق
@@ -515,7 +516,7 @@ class Api_Services
         return $this->sendRequest("https://s.api.ir/api/sw1/PowerBill", $data);
     }
 
-    public function getPowerBillInfo($billID)
+    public function PowerBillInfo($billID)
     {
         $data = [
             "billID" => $billID  // شناسه قبض برق
