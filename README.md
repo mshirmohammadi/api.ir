@@ -48,6 +48,7 @@ print_r($result);
   "message": null
 }
 ```
+
 ## 
 ### 2️⃣ احراز هویت شاهکار Lite (ShahkarLite)
 
@@ -105,12 +106,14 @@ print_r($result);
 {
   "data": {
     "imageBase64": "iVBORw0KGgoAAAANSUhEUgAA..."
-  },
+  }
+  ,
   "success": true,
   "code": 1,
   "error": null,
   "message": null
 }
+```
 
 ## 
 ### 4️⃣ تطبیق کد ملی با کارت بانکی (matchNationalCodeWithCard)
@@ -144,6 +147,7 @@ print_r($result);
   "error": null,
   "message": null
 }
+```
 
 ## 
 ### 5️⃣ تطبیق کد ملی با شبا (matchNationalCodeWithIban)
@@ -177,6 +181,7 @@ print_r($result);
   "error": null,
   "message": null
 }
+```
 
 ## 
 ### 6️⃣ تطبیق کد ملی با شبا پرو (matchNationalCodeWithIbanPro)
@@ -207,6 +212,7 @@ print_r($result);
   "error": null,
   "message": null
 }
+```
 
 ## 
 ### 7️⃣ وب سرویس تماس تلفنی (makeCall)
@@ -237,7 +243,7 @@ print_r($result);
   "error": null,
   "message": null
 }
-
+```
 ## 
 ### 8️⃣ وب سرویس OTP تلفنی (sendCallOTP)
 توضیح: نرخ ارسال پیامک با خط خدماتی از بهترین شبکه پیامکی کمتر 95% است. برای همین شرکت هایی مثل دیجی‌کالا و بانی مد ارسال کد تلفنی را به عنوان پشتیبان پیامک پیاده سازی کردند. بنابراین شما هم برای اینکه هیچ مشتری از دست ندهید می توانید این سرویس را به عنوان پشتیبان ارسال کد های پیامکی پیاده سازی کنید.
@@ -267,6 +273,7 @@ print_r($result);
   "error": null,
   "message": null
 }
+```
 
 ## 
 ### 9️⃣ وب سرویس OTP تلفنی alt (sendCallOTPAlt)
@@ -297,6 +304,7 @@ print_r($result);
   "error": null,
   "message": null
 }
+```
 
 ## 
 ### 🔟 وب سرویس OTP پیامکی (sendSmsOTP)
@@ -330,6 +338,7 @@ print_r($result);
   "error": null,
   "message": null
 }
+```
 
 ## 
 ### 1️⃣1️⃣ ارسال پیامک خدماتی (sendServiceSms)
@@ -360,6 +369,7 @@ print_r($result);
   "error": null,
   "message": null
 }
+```
 
 ## 
 ### 2️⃣1️⃣ احراز ویدئویی بایومتریک (videoBiometricVerification)
@@ -396,12 +406,14 @@ print_r($result);
   "data": {
     "matchingScore": 92,
     "isMatch": true
-  },
+  }
+  ,
   "success": true,
   "code": 1,
   "error": null,
   "message": null
 }
+```
 
 ## 
 ### 3️⃣1️⃣ احراز ویدئویی بایومتریک لایو (videoBiometricLive)
@@ -443,12 +455,14 @@ print_r($result);
     "livenessScore": 85,
     "isMatch": true,
     "isLiveness": true
-  },
+  }
+  ,
   "success": true,
   "code": 1,
   "error": null,
   "message": null
 }
+```
 
 ## 
 ### 4️⃣1️⃣ احراز ویدئویی بایومتریک جامع (videoBiometricFull)
@@ -498,12 +512,14 @@ print_r($result);
     "isLiveness": true,
     "speechScore": 55,
     "isSpeechMatched": true
-  },
+  }
+   ,
   "success": true,
   "code": 1,
   "error": null,
   "message": null
 }
+```
 
 ## 
 ### 5️⃣1️⃣ احراز تصویری بایومتریک (imageBiometricVerification)
@@ -540,12 +556,14 @@ print_r($result);
   "data": {
     "matchingScore": 75,
     "isMatch": true
-  },
+  }
+  ,
   "success": true,
   "code": 1,
   "error": null,
   "message": null
 }
+```
 
 ## 
 ### 6️⃣1️⃣ احراز تصویری بایومتریک Lite (imageBiometricLite)
@@ -582,12 +600,14 @@ print_r($result);
   "data": {
     "matchingScore": 75,
     "isMatch": true
-  },
+  }
+  ,
   "success": true,
   "code": 1,
   "error": null,
   "message": null
 }
+```
 
 ## 
 ### 7️⃣1️⃣ استعلام دارنده اینماد (checkEnamad)
@@ -617,12 +637,14 @@ print_r($result);
     "star": 1,
     "addDate": "string",
     "expDate": "string"
-  },
+  }
+   ,
   "success": true,
   "code": 1,
   "error": null,
   "message": null
 }
+```
 
 ## 
 ### 8️⃣1️⃣ وب سرویس بگراند پویا برنامه (getDynamicWallpaper)
@@ -648,6 +670,7 @@ print_r($result);
   "error": null,
   "message": null
 }
+```
 
 ## 
 ### 9️⃣1️⃣ استعلام شبا با شماره حساب (getIbanByAccount)
@@ -680,12 +703,14 @@ print_r($result);
       "مالک ۲"
     ],
     "bankName": "ملت"
-  },
+  }
+  ,
   "success": true,
   "code": 1,
   "error": null,
   "message": null
 }
+```
 
 ## 
 ### 🔟1️⃣ استعلام مشخصات کارت بانکی (getBankCardInfo)
@@ -711,12 +736,14 @@ print_r($result);
     "name": "امیر تبریزی",
     "iban": "IR820540102680020817909002",
     "accountNumber": "122.344.1234567890.1"
-  },
+  }
+  ,
   "success": true,
   "code": 1,
   "error": null,
   "message": null
 }
+```
 
 ## 
 ### 2️⃣2️⃣ استعلام نام مالک کارت بانکی (CardInfo) - عدم وجود در کلاس
@@ -746,12 +773,14 @@ print_r($result);
     "name": "علی رضایی",
     "iban": "IR820540102680020817909002",
     "bankName": "بانک ملت"
-  },
+  }
+   ,
   "success": true,
   "code": 1,
   "error": null,
   "message": null
 }
+```
 
 ## 
 ### 4️⃣2️⃣ استعلام نام دارنده شبا (getIbanInfo)
@@ -777,12 +806,14 @@ print_r($result);
     "name": "علی رضایی",
     "bankName": "بانک ملت",
     "active": true
-  },
+  }
+   ,
   "success": true,
   "code": 1,
   "error": null,
   "message": null
 }
+```
 
 ## 
 ### 5️⃣2️⃣ استعلام شخص حقوقی (getCompanyInfo)
@@ -816,12 +847,14 @@ print_r($result);
     "province": "تهران",
     "city": "تهران",
     "endDate": null
-  },
+  }
+   ,
   "success": true,
   "code": 1,
   "error": null,
   "message": null
 }
+```
 
 ## 
 ### 6️⃣2️⃣ استعلام اعضای هیئت مدیره (getCompanyMembers)
@@ -852,6 +885,7 @@ print_r($result);
         "roleCode": 1,
         "roleName": "مدیرعامل"
       }
+```
     ],
     "shareHolders": [
       {
@@ -860,13 +894,16 @@ print_r($result);
         "lastName": "رضایی",
         "percentage": 0.1
       }
+```
     ]
-  },
+  }
+   ,
   "success": true,
   "code": 1,
   "error": null,
   "message": null
 }
+```
 
 ## 
 ### 7️⃣2️⃣ استعلام اگهی های روزنامه رسمی (getCompanyNewspapers)
@@ -902,12 +939,14 @@ print_r($result);
       "letterDate": "1404/01/02",
       "letterNumber": "140330919101129712"
     }
+```
   ],
   "success": true,
   "code": 1,
   "error": null,
   "message": null
 }
+```
 
 ## 
 ### 8️⃣2️⃣ استعلام صاحبین حق امضا شرکت‌ها (getCompanySignatories)
@@ -939,6 +978,7 @@ print_r($result);
           "obligatoryStatus": true,
           "personID": "0010007700"
         }
+```
       ],
       "normalSignature": [
         {
@@ -947,6 +987,7 @@ print_r($result);
           "normalStatus": true,
           "personID": "0010007701"
         }
+```
       ],
       "obligatoryAndNormalSignature": [
         {
@@ -954,8 +995,10 @@ print_r($result);
           "title": "عضو هیئت مدیره",
           "personID": "0010007702"
         }
+```
       ]
-    },
+    }
+   ,
     "signatureFullText": "کلیه اوراق اسناد بهادار تعهد آور شرکت از قبیل چک سفته بروات قراردادها عقود اسلامی همچنین کلیه نامه‌های عادی اداری با امضا ...",
     "newspaperDate": "2025-01-01T00:00:00",
     "newsletterDate": "2025-01-02T00:00:00",
@@ -968,20 +1011,25 @@ print_r($result);
         "person": {
           "title": "علی رضایی",
           "nationalCode": "0055454333"
-        },
+        }
+   ,
         "position": {
           "title": "مدیر عامل و عضو هییت مدیره",
           "firstRole": "عضو هیئت مدیره",
           "secondRole": "مدیرعامل"
         }
+```
       }
+```
     ]
-  },
+  }
+   ,
   "success": true,
   "code": 1,
   "error": null,
   "message": null
 }
+```
 
 ## 
 ### 9️⃣2️⃣ تبدیل لوکیشن به آدرس (GeoToAddress) - عدم وجود در کلاس
@@ -1021,12 +1069,14 @@ print_r($result);
     "buildingName": "ساختمان نمونه",
     "description": "بدون توضیح",
     "address": "تهران تهران خیابان استاد مطهری ..."
-  },
+  }
+   ,
   "success": true,
   "code": 1,
   "error": null,
   "message": null
 }
+```
 
 ## 
 ### 1️⃣3️⃣ سرویس رهیگیری بسته پستی (trackPostalPackage)
@@ -1067,13 +1117,16 @@ print_r($result);
         "postalNode": "تهران، مرکز پستی شمال",
         "time": "14:30"
       }
+```
     ]
-  },
+  }
+   ,
   "success": true,
   "code": 1,
   "error": null,
   "message": null
 }
+```
 
 ## 
 ### 2️⃣3️⃣ سرویس دریافت لوکیشن با کدپستی (getLocationByPostalCode)
@@ -1099,12 +1152,14 @@ print_r($result);
     "mapUrl": "https://maps.google.com/?q==35.6892,51.3890",
     "lat": 35.6892,
     "long": 51.389
-  },
+  }
+   ,
   "success": true,
   "code": 1,
   "error": null,
   "message": null
 }
+```
 
 ## 
 ### 3️⃣3️⃣ وب سرویس Chat GPT (ChatGPT) - عدم وجود در کلاس
@@ -1145,6 +1200,7 @@ print_r($result);
   "error": null,
   "message": null
 }
+```
 
 ## 
 ### 6️⃣3️⃣ استعلام تعداد چک برگشتی (getUnpaidCheques)
@@ -1168,12 +1224,14 @@ print_r($result);
 {
   "data": {
     "count": 0
-  },
+  }
+   ,
   "success": true,
   "code": 1,
   "error": null,
   "message": null
 }
+```
 
 ## 
 ### 7️⃣3️⃣ استعلام رنگ چک صیادی (getChequeColor)
@@ -1201,12 +1259,14 @@ print_r($result);
   "data": {
     "chequeColor": "سفید",
     "chequeColorCode": 1
-  },
+  }
+   ,
   "success": true,
   "code": 1,
   "error": null,
   "message": null
 }
+```
 
 ## 
 ### 8️⃣3️⃣ استعلام مشخصات چک صیادی (getChequeInfo)
@@ -1237,12 +1297,14 @@ print_r($result);
     "chequeType": "BANS",
     "branchCode": "1026",
     "name": "علی محمدی"
-  },
+  }
+   ,
   "success": true,
   "code": 1,
   "error": null,
   "message": null
 }
+```
 
 ## 
 ### 9️⃣3️⃣ استعلام اعتبار مجوز شغلی (License) - عدم وجود در کلاس
@@ -1281,12 +1343,15 @@ print_r($result);
       "suspiciousTotalAmount": 95000000,
       "dishonored": 120000000
     }
-  },
+```
+  }
+   ,
   "success": true,
   "code": 1,
   "error": null,
   "message": null
 }
+```
 
 ## 
 ### 1️⃣4️⃣ استعلام وضعیت پاسپورت (getPassportStatus)
@@ -1322,12 +1387,14 @@ print_r($result);
     "expirationDate": "1414/01/15",
     "passportStatus": "فعال",
     "personFound": true
-  },
+  }
+   ,
   "success": true,
   "code": 1,
   "error": null,
   "message": null
 }
+```
 
 ## 
 ### 2️⃣4️⃣ استعلام نمره منفی گواهینامه (getDrivingLicenseScore)
@@ -1357,12 +1424,14 @@ print_r($result);
 {
   "data": {
     "negativeScore": 0
-  },
+  }
+   ,
   "success": true,
   "code": 1,
   "error": null,
   "message": null
 }
+```
 
 ## 
 ### 3️⃣4️⃣ استعلام گواهینامه رانندگی (getDrivingLicense)
@@ -1401,13 +1470,16 @@ print_r($result);
         "rahvarStatus": "تحويل به پست",
         "lisenseNumber": "17687675"
       }
+```
     ]
-  },
+  }
+   ,
   "success": true,
   "code": 1,
   "error": null,
   "message": null
 }
+```
 
 ## 
 ### 4️⃣4️⃣ استعلام خدمت سربازی (getMilitaryStatus)
@@ -1431,12 +1503,14 @@ print_r($result);
 {
   "data": {
     "qualified": true
-  },
+  }
+   ,
   "success": true,
   "code": 1,
   "error": null,
   "message": null
 }
+```
 
 ## 
 ### 5️⃣4️⃣ استعلام پلاک های فعال (getActivePlates)
@@ -1470,12 +1544,14 @@ print_r($result);
       "revokedDescription": "مرکز شماره گذاری چیتگر",
       "serialNumber": "SN123456789"
     }
+```
   ],
   "success": true,
   "code": 1,
   "error": null,
   "message": null
 }
+```
 
 ## 
 ### 6️⃣4️⃣ استعلام تاریخچه پلاک (getPlateHistory)
@@ -1509,15 +1585,18 @@ print_r($result);
         "detachDate": "1403/01/01",
         "vehicleModel": "1400"
       }
+```
     ],
     "description": "دارای مالک - نصب برروی وسیله",
     "serialNumber": "123456789"
-  },
+  }
+   ,
   "success": true,
   "code": 1,
   "error": null,
   "message": null
 }
+```
 
 ## 
 ### 7️⃣4️⃣ استعلام کارت و سند خودرو (VehicleCard) - عدم وجود در کلاس
@@ -1561,12 +1640,14 @@ print_r($result);
     "chassisNumber": "N9JINJWJ2NXVAI31",
     "vin": "UK3939028JMJ3P202",
     "model": 1403
-  },
+  }
+   ,
   "success": true,
   "code": 1,
   "error": null,
   "message": null
 }
+```
 
 ## 
 ### 9️⃣4️⃣ وب سرویس استعلام خلافی خودرو (getVehicleViolationByParts)
@@ -1616,15 +1697,18 @@ print_r($result);
         "serial": "999999999_99",
         "barcode": "BC-784512369"
       }
+```
     ],
     "totalAmount": 600000,
     "count": 600000
-  },
+  }
+   ,
   "success": true,
   "code": 1,
   "error": null,
   "message": null
 }
+```
 
 ## 
 ### 🔟4️⃣ استعلام وضعیت اتباع (getNationalityStatus)
@@ -1672,12 +1756,14 @@ print_r($result);
     "education": 0,
     "isActive": true,
     "deleteAt": ""
-  },
+  }
+   ,
   "success": true,
   "code": 1,
   "error": null,
   "message": null
 }
+```
 
 ## 
 ### 1️⃣5️⃣ وب سرویس قبض آب (getWaterBill)
@@ -1704,12 +1790,14 @@ print_r($result);
     "billID": "1100151403410",
     "payID": "987654321",
     "date": "1404/01/01"
-  },
+  }
+   ,
   "success": true,
   "code": 1,
   "error": null,
   "message": null
 }
+```
 
 ## 
 ### 2️⃣5️⃣ وب سرویس قبض آب با جزئیات (getWaterBillInfo)
@@ -1743,17 +1831,20 @@ print_r($result);
       "city": "تهران",
       "capacity": 25,
       "previousReadDate": "1402/1/1"
-    },
+    }
+   ,
     "amount": 150000,
     "billID": "1100151403410",
     "payID": "987654321",
     "date": "1404/01/01"
-  },
+  }
+   ,
   "success": true,
   "code": 1,
   "error": null,
   "message": null
 }
+```
 
 ## 
 ### 3️⃣5️⃣ وب سرویس قبض گاز (getGasBill)
@@ -1780,12 +1871,14 @@ print_r($result);
     "billID": "1100151403410",
     "payID": "987654321",
     "date": "1404/01/01"
-  },
+  }
+   ,
   "success": true,
   "code": 1,
   "error": null,
   "message": null
 }
+```
 
 ## 
 ### 4️⃣5️⃣ وب سرویس قبض گاز با جزئیات (getGasBillInfo)
@@ -1819,17 +1912,20 @@ print_r($result);
       "city": "تهران",
       "capacity": 25,
       "previousReadDate": "1402/1/1"
-    },
+    }
+   ,
     "amount": 150000,
     "billID": "1100151403410",
     "payID": "987654321",
     "date": "1404/01/01"
-  },
+  }
+   ,
   "success": true,
   "code": 1,
   "error": null,
   "message": null
 }
+```
 
 ## 
 ### 5️⃣5️⃣ وب سرویس قبض برق (getPowerBill)
@@ -1856,12 +1952,14 @@ print_r($result);
     "billID": "1100151403410",
     "payID": "987654321",
     "date": "1404/01/01"
-  },
+  }
+   ,
   "success": true,
   "code": 1,
   "error": null,
   "message": null
 }
+```
 
 ## 
 ### 6️⃣5️⃣ وب سرویس قبض برق با جزئیات (getPowerBillInfo)
@@ -1895,15 +1993,18 @@ print_r($result);
       "city": "تهران",
       "capacity": 25,
       "previousReadDate": "1402/1/1"
-    },
+    }
+   ,
     "amount": 150000,
     "billID": "1100151403410",
     "payID": "987654321",
     "date": "1404/01/01"
-  },
+  }
+   ,
   "success": true,
   "code": 1,
   "error": null,
   "message": null
 }
+```
 
